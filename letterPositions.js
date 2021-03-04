@@ -36,6 +36,7 @@ const letterPositions = function(sentence) {
   for (const item of sentence) {
     results[item] = []; 
   }
+  delete results[" "];
 
   const resultItem = Object.keys(results);
   
@@ -55,4 +56,5 @@ const letterPositions = function(sentence) {
 
 //TEST 
 console.log(letterPositions("hello"));
+console.log(letterPositions("lighthouse in the house"));
 assertArraysEqual(letterPositions("hello").e, [1]);
