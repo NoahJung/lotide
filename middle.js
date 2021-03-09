@@ -23,4 +23,3 @@ function middle(newArr) {
 
 module.exports = middle;
 
-
